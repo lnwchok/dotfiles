@@ -20,6 +20,9 @@ $character"""
 add_newline = true
 palette = "onedark"
 
+# Timeout for commands executed by starship (in milliseconds).
+command_timeout = 36000
+
 [character]
 success_symbol = '[➜](bold green)'
 error_symbol = '[➜](bold red)'
