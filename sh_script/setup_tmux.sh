@@ -7,9 +7,9 @@ fi
 
 SESSION=$1
 # Start New Session with our name
-tmux new-session -d -s $SESSION
+tmux new-session -d -s $SESSION -x "$(tput cols)" -y "$(tput lines)"
 
-tmux split-window -hl 10
+tmux split-window -hl "20%"
 tmux split-window -t2
 
 
